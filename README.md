@@ -38,10 +38,34 @@ A user-friendly graphical interface was developed to facilitate intuitive and ef
 
 ### Visualization of Analysis Results
 
-If the user’s scan data was stored, a script was developed to generate 3D and 2D visualizations based on the average of the recorded forces. Once the path to the user’s CSV file is specified, the script processes the data and produces these visualizations, enabling more in-depth analyses over time or comparisons with other users.
+If the user’s scan data was stored, a script was developed to generate 3D and 2D visualizations based on the average of the recorded forces. Once the path to the user’s CSV file is specified, the script processes the data and produces these visualizations, enabling more in-depth analyses over time or comparisons with other users. Additionally, the script includes a variety of useful functions for comparing multiple results from the same user, as well as comparisons between different users.
 
 <img src="/images/representacion_3d.jpg" alt="3D visualization" width="40%">
 <img src="/images/distribucion.jpg" alt="Force distribution" width="40%">
+
+## 📁 Project Structure
+
+```
+main/
+├── images/ # Images used in README.md
+├── source/ # Source codes of the project
+│ ├── Analisis_Resultados.py # Script for statistical and visual analysis
+│ ├── FSRs_Mux_Bluetooth.ino # ESP32 program logic
+│ └── Sistema_Fuerzas_Plantares.py # Main program logic
+└── README.md # Project overview
+```
+
+## 🧰 Technologies Used
+
+- Python
+  - Tkinter
+  - Serial
+  - Numpy
+  - Pandas
+  - Matplotlib 
+- Arduino
+  - BluetoothSerial.h
+  - string.h 
 
 ## 📖 Official Project Repository
 
